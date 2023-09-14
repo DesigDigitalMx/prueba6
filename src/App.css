@@ -1,0 +1,270 @@
+@media (max-width: 950px) {
+  .bienvenidos_nosotros,
+  .fundacion_nosotros,
+  .objetivo_nosotros,
+  .platos_nosotros,
+  .visitanos_nosotros,
+  .contacto_ayudarte {
+    padding: 3rem;
+    flex-direction: column;
+    gap: 2rem;
+    height: auto;
+    margin: 0; /* Combina margin-top y margin-bottom en una sola línea */
+  }
+
+  /* Ancho y alineación de texto mejorados */
+  .bienvenidos_nosotros p,
+  .fundacion_nosotros p,
+  .objetivo_nosotros p,
+  .platos_nosotros p,
+  .visitanos_nosotros p,
+  .contacto_ayudarte .text_content {
+    width: 80%;
+    text-align: center;
+  }
+
+  /* Tamaño de imagen mejorado y centrado */
+  .bienvenidos_nosotros img,
+  .fundacion_nosotros img,
+  .objetivo_nosotros img,
+  .platos_nosotros .image_gallery_platos,
+  .visitanos_nosotros img {
+    width: 50%;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
+
+  .platos_nosotros .image_gallery_platos {
+    width: 100%;
+  }
+
+  .contacto_ayudarte .img_container_uno {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .iconos_menu {
+    overflow-x: scroll;
+    justify-content: flex-start;
+    gap: 15px;
+    padding-block: 1rem;
+    flex-wrap: nowrap;
+  }
+
+  .swiper-horizontal {
+    width: 95% !important;
+  }
+
+  .swiper-slide {
+    width: 49% !important;
+    margin-right: 15px !important;
+  }
+
+  .contacto_ayudarte .img_container_uno img {
+    width: 100%;
+  }
+
+  .footer .direccion,
+  .footer .contacto {
+    border-right: none;
+    border-bottom: 2px dashed #ffae00;
+    padding-block: 2rem;
+    width: 80%;
+  }
+
+  .footer_content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .swiper-horizontal {
+    width: 100% !important;
+  }
+  .swiper-slide {
+    margin-right: 5px !important;
+    width: 50% !important;
+  }
+  .swiper .item .info-product {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .swiper .item h2 {
+    font-size: 15px;
+  }
+  .contacto_ayudarte .img_container_uno {
+    width: 100%;
+  }
+}
+
+@media (max-width: 490px) {
+  .toggle {
+    display: flex;
+  }
+
+  header nav {
+    position: absolute;
+    width: 100%;
+    top: -250px;
+    left: 0;
+    background-color: white;
+    flex-direction: column;
+    overflow-x: hidden;
+    display: flex;
+    padding-block: 2rem;
+    transition: 0.3s;
+    z-index: -1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header nav.show-menu {
+    top: 4rem;
+  }
+
+  .style_titulo {
+    font-size: 1.7rem;
+  }
+
+  .style_span_general {
+    font-size: 3rem;
+  }
+
+  .container-cart-products {
+    width: 90vw;
+  }
+
+  .bienvenidos_nosotros p,
+  .fundacion_nosotros p,
+  .objetivo_nosotros p,
+  .platos_nosotros p,
+  .visitanos_nosotros p,
+  .contacto_ayudarte .text_content {
+    width: 80%;
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .bienvenidos_nosotros,
+  .fundacion_nosotros,
+  .objetivo_nosotros,
+  .platos_nosotros,
+  .visitanos_nosotros,
+  .contacto_ayudarte {
+    align-items: normal;
+  }
+
+  .pedido-content {
+    flex-direction: column;
+    padding-inline: 1rem;
+  }
+
+  .pedido-content .item-pedido {
+    background: white;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+  }
+  .pedido .item-pedido .btn-pedido-item button {
+    height: 100%;
+    width: 100%;
+    background: greenyellow;
+  }
+  .pedido .item-pedido .btn-pedido-item {
+    width: 61px;
+    height: 67px;
+  }
+  .pedido-content .item-pedido .item-pedido-content {
+    flex: 2;
+    text-align: start;
+  }
+}
+
+@media (max-width: 426px) {
+  .checkout-section {
+    display: flex;
+    padding-inline: 0.5rem;
+    padding-top: 0.5rem;
+    flex-direction: column;
+    margin-bottom: 10px;
+    gap: 0.5rem;
+  }
+
+  .select-input,
+  .select-input-mesa {
+    width: -webkit-fill-available;
+    height: 35px;
+    font-size: 10px;
+  }
+
+  .checkout-section > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .checkout-section .label-text {
+    font-size: 11px;
+  }
+
+  .checkout-section .input-text {
+    width: 130px;
+    font-size: 10px;
+  }
+
+  .checkout-section .shipping-cost {
+    font-size: 14px;
+    justify-content: center;
+  }
+
+  .btn-pedido {
+    font-size: 13px;
+    padding-block: 10px;
+  }
+
+  .container-items {
+    grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+  }
+
+  .item {
+    width: 300px;
+  }
+
+  .container-opciones {
+    padding-top: 8rem;
+    gap: 20px !important;
+  }
+
+  .container-mesa {
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    height: min-content;
+  }
+}
+
+@media (max-width: 390px) {
+  .container_menu {
+    padding-inline: 1rem;
+  }
+
+  .container-items {
+    grid-template-columns: repeat(auto-fit, minmax(290px, max-content));
+  }
+
+  .item {
+    width: 290px;
+  }
+
+  .swiper .item h2 {
+    font-size: 13px;
+  }
+
+  .footer .mapa {
+    width: 234px;
+  }
+}
